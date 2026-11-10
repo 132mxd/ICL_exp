@@ -1,0 +1,7 @@
+{
+  "stage": "epr",
+  "encoder_source": "sentence-transformers/roberta-large-nli-stsb-mean-tokens",
+  "max_length": 128,
+  "training_queries": 20,
+  "seed": 42
+}

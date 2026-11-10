@@ -1,0 +1,37 @@
+# Python bytecode and tool caches
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local environments and credentials
+.env
+.env.*
+openai_keys.txt
+secrets/
+*.pem
+
+# Downloaded model weights and logs
+models/
+*.log
+logs/
+
+# Generated datasets, Hugging Face caches, and selector supervision
+data/
+
+# Checkpoint weights are external artifacts; retain small metadata only
+checkpoints/**
+!checkpoints/**/
+!checkpoints/**/metadata.json
+
+# Retain compact experiment summaries, not per-sample JSONL outputs
+results/**
+!results/**/
+!results/**/summary.json
+
+# The upstream CEIL checkout is recorded in README by URL and commit
+third_party/icl-ceil/
+
+# Editors and operating systems
+.vscode/
+.idea/
+.DS_Store

@@ -1,0 +1,30 @@
+{
+  "zero_shot": true,
+  "datasets": [
+    "banking77"
+  ],
+  "models": [
+    "qwen"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "qwen",
+      "model_id": "/new_home/maxiaodong/projects/ICL_experiment/models/Qwen2.5-7B-Instruct",
+      "dataset": "banking77",
+      "zero_shot": true,
+      "answer_type": "label",
+      "metric": "exact_match_accuracy",
+      "structured_output": true,
+      "samples": 3080,
+      "correct": 1958,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.6357142857142857,
+      "elapsed_seconds": 563.76,
+      "output": "results/zeroshot_banking77_qwen_full/qwen_banking77.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}

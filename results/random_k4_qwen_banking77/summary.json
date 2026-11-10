@@ -1,0 +1,48 @@
+{
+  "method": "random",
+  "zero_shot": false,
+  "num_shots": 4,
+  "seed": 42,
+  "bm25_k1": null,
+  "bm25_b": null,
+  "kate_encoder": null,
+  "kate_revision": null,
+  "kate_order": null,
+  "kate_max_length": null,
+  "datasets": [
+    "banking77"
+  ],
+  "models": [
+    "qwen"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "qwen",
+      "model_id": "/new_home/maxiaodong/projects/ICL_experiment/models/Qwen2.5-7B-Instruct",
+      "dataset": "banking77",
+      "method": "random",
+      "zero_shot": false,
+      "num_shots": 4,
+      "seed": 42,
+      "bm25_k1": null,
+      "bm25_b": null,
+      "kate_encoder": null,
+      "kate_order": null,
+      "kate_max_length": null,
+      "answer_type": "label",
+      "metric": "exact_match_accuracy",
+      "structured_output": true,
+      "max_tokens": 32,
+      "samples": 3080,
+      "correct": 1972,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.6402597402597403,
+      "elapsed_seconds": 585.9,
+      "output": "results/random_k4_qwen_banking77/qwen_banking77.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}

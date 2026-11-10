@@ -1,0 +1,7 @@
+{
+  "stage": "epr",
+  "encoder_source": "data/hf_cache/models/models--sentence-transformers--roberta-large-nli-stsb-mean-tokens/snapshots/e24ed4a0dd9771a1e0f6bba380269be0dd4f0e47",
+  "max_length": 128,
+  "training_queries": 2,
+  "seed": 42
+}

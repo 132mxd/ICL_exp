@@ -1,0 +1,41 @@
+{
+  "method": "zero_shot",
+  "zero_shot": true,
+  "num_shots": 0,
+  "seed": null,
+  "bm25_k1": null,
+  "bm25_b": null,
+  "datasets": [
+    "gsm8k"
+  ],
+  "models": [
+    "qwen"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "qwen",
+      "model_id": "/new_home/maxiaodong/projects/ICL_experiment/models/Qwen2.5-7B-Instruct",
+      "dataset": "gsm8k",
+      "method": "zero_shot",
+      "zero_shot": true,
+      "num_shots": 0,
+      "seed": null,
+      "bm25_k1": null,
+      "bm25_b": null,
+      "answer_type": "number",
+      "metric": "exact_match_accuracy",
+      "structured_output": false,
+      "max_tokens": 512,
+      "samples": 1319,
+      "correct": 1199,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.909021986353298,
+      "elapsed_seconds": 3666.73,
+      "output": "results/zero_shot_gsm8k_cot_qwen/qwen_gsm8k.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}

@@ -1,0 +1,11 @@
+{
+  "method": "ceil",
+  "dataset": "sst5",
+  "teacher_model": "models/Qwen2.5-1.5B-Instruct",
+  "num_shots": 4,
+  "max_length": 128,
+  "temperature": 0.1,
+  "candidate_pool_size": 10,
+  "training_queries": 20,
+  "seed": 42
+}

@@ -1,0 +1,8 @@
+# 使用独立环境；不要将这些依赖覆盖安装到已固定版本的 vLLM 环境中。
+torch==2.4.0
+transformers==4.46.3
+datasets==3.1.0
+accelerate==1.1.1
+peft==0.14.0
+trl==0.12.2
+numpy==1.26.4

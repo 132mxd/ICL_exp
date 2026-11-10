@@ -1,0 +1,61 @@
+{
+  "method": "bm25",
+  "zero_shot": false,
+  "num_shots": 4,
+  "seed": null,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "kate_encoder": null,
+  "kate_revision": null,
+  "kate_order": null,
+  "kate_max_length": null,
+  "ceil_checkpoint": null,
+  "ceil_candidate_pool_size": null,
+  "datasets": [
+    "sst5"
+  ],
+  "models": [
+    "qwen1_5b"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "qwen1_5b",
+      "model_id": "qwen1_5b",
+      "dataset": "sst5",
+      "method": "bm25",
+      "zero_shot": false,
+      "num_shots": 4,
+      "seed": null,
+      "bm25_k1": 1.5,
+      "bm25_b": 0.75,
+      "kate_encoder": null,
+      "kate_order": null,
+      "kate_max_length": null,
+      "ceil_checkpoint": null,
+      "answer_type": "label",
+      "demonstration_filter_stats": {
+        "original_pool_size": 8544,
+        "test_overlap_unique_inputs": 2,
+        "test_overlap_rows_removed": 3,
+        "test_overlap_label_conflicts": 0,
+        "conflicting_unique_inputs": 0,
+        "conflicting_rows_removed": 0,
+        "internal_duplicate_rows_removed": 9,
+        "final_pool_size": 8532
+      },
+      "metric": "exact_match_accuracy",
+      "structured_output": true,
+      "max_tokens": 32,
+      "samples": 10,
+      "correct": 5,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.5,
+      "elapsed_seconds": 0.6,
+      "output": "results/bm25_sst5_k4_smoke/qwen1_5b_sst5.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}

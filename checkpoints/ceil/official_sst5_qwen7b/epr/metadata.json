@@ -1,0 +1,14 @@
+{
+  "stage": "epr",
+  "implementation": "official-ceil-qwen-adapter-v1",
+  "encoder_source": "sentence-transformers/roberta-large-nli-stsb-mean-tokens",
+  "max_length": 128,
+  "training_queries": 900,
+  "validation_queries": 100,
+  "batch_size": 64,
+  "positive_topk": 5,
+  "negative_bottomk": 5,
+  "best_validation_loss": 4.370820045471191,
+  "warmup_ratio": 0.1,
+  "seed": 42
+}

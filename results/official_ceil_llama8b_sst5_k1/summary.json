@@ -1,0 +1,65 @@
+{
+  "method": "ceil",
+  "zero_shot": false,
+  "num_shots": 1,
+  "seed": null,
+  "bm25_k1": null,
+  "bm25_b": null,
+  "kate_encoder": null,
+  "kate_revision": null,
+  "kate_order": null,
+  "kate_max_length": null,
+  "ceil_checkpoint": "checkpoints/ceil/official_sst5_llama8b/ceil_k16_seed42",
+  "ceil_candidate_pool_size": null,
+  "genicl_checkpoint": null,
+  "genicl_e5_model": null,
+  "genicl_candidate_pool_size": null,
+  "datasets": [
+    "sst5"
+  ],
+  "models": [
+    "llama"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "llama",
+      "model_id": "Llama-3.1-8B-Instruct",
+      "dataset": "sst5",
+      "method": "ceil",
+      "zero_shot": false,
+      "num_shots": 1,
+      "seed": null,
+      "bm25_k1": null,
+      "bm25_b": null,
+      "kate_encoder": null,
+      "kate_order": null,
+      "kate_max_length": null,
+      "ceil_checkpoint": "checkpoints/ceil/official_sst5_llama8b/ceil_k16_seed42",
+      "genicl_checkpoint": null,
+      "answer_type": "label",
+      "demonstration_filter_stats": {
+        "original_pool_size": 8544,
+        "test_overlap_unique_inputs": 2,
+        "test_overlap_rows_removed": 3,
+        "test_overlap_label_conflicts": 0,
+        "conflicting_unique_inputs": 0,
+        "conflicting_rows_removed": 0,
+        "internal_duplicate_rows_removed": 9,
+        "final_pool_size": 8532
+      },
+      "metric": "exact_match_accuracy",
+      "structured_output": true,
+      "max_tokens": 32,
+      "samples": 2210,
+      "correct": 1090,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.49321266968325794,
+      "elapsed_seconds": 121.67,
+      "output": "results/official_ceil_llama8b_sst5_k1/llama_sst5.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}

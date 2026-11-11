@@ -1,0 +1,19 @@
+{
+  "method": "ceil",
+  "implementation": "official-ceil-qwen-adapter-v1",
+  "dataset": "sst5",
+  "teacher_model": "models/Llama-3.1-8B-Instruct",
+  "training_set_size": 16,
+  "max_length": 128,
+  "scale_factor": 0.1,
+  "margin": 0.02,
+  "candidate_pool_size": 100,
+  "candidate_sets": 50,
+  "batch_size": 64,
+  "training_queries": 900,
+  "validation_queries": 100,
+  "best_validation_loss": 24.69154167175293,
+  "warmup_ratio": 0.1,
+  "validation_split": "random",
+  "seed": 42
+}

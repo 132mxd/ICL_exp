@@ -1,0 +1,65 @@
+{
+  "method": "ceil",
+  "zero_shot": false,
+  "num_shots": 2,
+  "seed": null,
+  "bm25_k1": null,
+  "bm25_b": null,
+  "kate_encoder": null,
+  "kate_revision": null,
+  "kate_order": null,
+  "kate_max_length": null,
+  "ceil_checkpoint": "checkpoints/ceil/official_paws_qwen7b/ceil_k16_seed42",
+  "ceil_candidate_pool_size": null,
+  "genicl_checkpoint": null,
+  "genicl_e5_model": null,
+  "genicl_candidate_pool_size": null,
+  "datasets": [
+    "paws"
+  ],
+  "models": [
+    "qwen"
+  ],
+  "structured_output_for_label_tasks": true,
+  "results": [
+    {
+      "model": "qwen",
+      "model_id": "/new_home/maxiaodong/projects/ICL_experiment/models/Qwen2.5-7B-Instruct",
+      "dataset": "paws",
+      "method": "ceil",
+      "zero_shot": false,
+      "num_shots": 2,
+      "seed": null,
+      "bm25_k1": null,
+      "bm25_b": null,
+      "kate_encoder": null,
+      "kate_order": null,
+      "kate_max_length": null,
+      "ceil_checkpoint": "checkpoints/ceil/official_paws_qwen7b/ceil_k16_seed42",
+      "genicl_checkpoint": null,
+      "answer_type": "label",
+      "demonstration_filter_stats": {
+        "original_pool_size": 49401,
+        "test_overlap_unique_inputs": 0,
+        "test_overlap_rows_removed": 0,
+        "test_overlap_label_conflicts": 0,
+        "conflicting_unique_inputs": 15,
+        "conflicting_rows_removed": 31,
+        "internal_duplicate_rows_removed": 46,
+        "final_pool_size": 49324
+      },
+      "metric": "exact_match_accuracy",
+      "structured_output": true,
+      "max_tokens": 32,
+      "samples": 8000,
+      "correct": 6789,
+      "invalid": 0,
+      "request_errors": 0,
+      "accuracy": 0.848625,
+      "elapsed_seconds": 617.93,
+      "output": "results/official_ceil_qwen7b_paws_k2/qwen_paws.jsonl"
+    }
+  ],
+  "dataset_load_failures": [],
+  "model_failures": []
+}
